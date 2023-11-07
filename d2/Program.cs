@@ -76,7 +76,7 @@
 //    return m * a;
 //}
 
-//Girilen parametrenin faktöriyelini alan metod yazalım
+#endregion
 
 //var faktoriyelSonuc = Faktoriyel1(5);
 //Console.WriteLine(Faktoriyel1(5));
