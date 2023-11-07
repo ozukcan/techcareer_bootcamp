@@ -19,7 +19,7 @@ using Day2_OOP;
 //person1.name = "Ahmet";
 //person1.age = 17;
 //person1.surname = "Şahin";
-//person1.phone = " ";
+//person1.phone = " "; //Burda boş bırakılan kısımdan ötürü boş olan Person Constructor'a gider
 
 //Person.Add(person1); //Static olunca nesne oluşturmadan direkt class üstünden çağırabiliyoruz
 
@@ -41,12 +41,13 @@ book.SayfaSayisi = 125;
 
 Console.WriteLine(book);
 
+#region STRUCT - RECORD Özellikleri
 //**************STRUCT*****************
 //Struct -> Değer tipindedir,
 //bellekte stack hafızada tutulur,
 //değer tipinde olduğu için new yapmak gerekmez,
 //Büyük veri setleri için değildir
-//structlar bir classtan miras alamazlar sadece interfaceden miras alabilirler.
+//structlar bir classtan miras alamazlar sadece interfaceden miras alabilirler.(birden fazla miras alabilir)
 
 //*************RECORD*******************
 //.Net5 ve C# 9 ile gelmiştir.
@@ -54,4 +55,4 @@ Console.WriteLine(book);
 //Genellikle veri taşıyıcıları da denir.
 // İmmutable classlardır.
 
-//****************
+#endregion

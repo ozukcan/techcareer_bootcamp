@@ -2,6 +2,7 @@
 
 internal class Person
 {
+
     //Constructor ilk çalışmasını istediğimiz kod bloğudur.
     //cotr kısayolu ile oluşturulur
     //iki tane oluşturma sebebimiz aldığımız kayıtların zorunlulukları varsa 

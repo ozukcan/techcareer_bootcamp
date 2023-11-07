@@ -15,6 +15,8 @@
 //Console.WriteLine($"Kişinin adı {name}, Kişinin soyadı: {surname}, Kişinin Yaşı: {age}");
 //}
 
+
+#region Switch-Case ile hesap makinesi uygulaması
 //Bir hesap makinesi uygulaması yapalım switch-case kullanarak
 //Kullanıcıdan ilk başta 1.sayıyı sonrasında operatörlerden birini almak(string), sonrasında 2.sayıyı alıp sonucu yazdırmak
 //Toplama(a,b), Cikarma(a,b), Carpma(a,b), Bolme(a,b)
@@ -67,6 +69,10 @@
 //    Console.WriteLine(sayi1/sayi2);
 //}
 
+#endregion
+
+#region İvme ve Kütleyi kullanarak cismin kuvvetini hesaplayan method
+
 //İvmeyi ve kütleyi alarak cismin kuvvetini hesaplayan metodu yazalım
 
 //var sonuc = Kuvvet(m:4, a:5);
@@ -77,6 +83,10 @@
 //}
 
 #endregion
+
+#region Girilen parametrenin faktöriyelini alan method
+
+//Girilen parametrenin faktöriyelini alan method yazalım
 
 //var faktoriyelSonuc = Faktoriyel1(5);
 //Console.WriteLine(Faktoriyel1(5));
@@ -100,12 +110,17 @@
 //    return sayi * Faktoriyel2(sayi-1);
 //}
 
+#endregion
+
+#region Girilen parametredeki metni ter çeviren method
 //girilen parametredeki metni ters çeviren metod
 
 //Console.WriteLine(ReverseMetin("TechCareer Bootcamp 2.gün"));
 
 //int[] sayilar = { 10, 20, 30, 40, 21, 25, 66, 88, 101 };
 //Console.WriteLine($"Sayılar dizisinin en büyük sayısı: {EnBuyukSayi(sayilar)}");
+
+
 //string ReverseMetin(string metin)
 //{
 //    char[] chars = metin.ToCharArray();
@@ -126,6 +141,8 @@
 //    }
 //    return enBuyuk;
 //}
+
+#endregion
 
 #region Params Keyword
 
@@ -167,15 +184,53 @@
 
 //out keywordü eğer birden fazla return işlemi yapacaksak eğer out keywordu kullanırız. parametre kısmında başına out koyarız
 //ve fonksiyonu çağırırken out yazdığımız parametreleri dışarda oluşturduğumuz değişkenlere atarız
-int bolmeIslemiBolum;
-int bolmeIslemiKalan;
+//int bolmeIslemiBolum;
+//int bolmeIslemiKalan;
 
-BolmeIslemi(15, 10, out bolmeIslemiBolum, out bolmeIslemiKalan);
-Console.WriteLine($"Bölme işleminin bölümü : {bolmeIslemiBolum}, Kalanı  : {bolmeIslemiKalan}");
-void BolmeIslemi(int bolunen, int bolen,out int bolum, out int kalan)
-{
-    bolum = bolunen / bolen;
-    kalan = bolunen % bolen;
-}
+//BolmeIslemi(15, 10, out bolmeIslemiBolum, out bolmeIslemiKalan);
+//Console.WriteLine($"Bölme işleminin bölümü : {bolmeIslemiBolum}, Kalanı  : {bolmeIslemiKalan}");
+//void BolmeIslemi(int bolunen, int bolen,out int bolum, out int kalan)
+//{
+//    bolum = bolunen / bolen;
+//    kalan = bolunen % bolen;
+//}
+
+#endregion
+
+#region Üslü ifadeleri toplamayla hesaplama işlemi
+//Console.WriteLine("Taban : ");
+//int taban = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Üs = ");
+//int us = Convert.ToInt32(Console.ReadLine());
+//int toplam = 0;
+
+//if (us == 0)
+//{
+//    Console.WriteLine("1");
+//}
+//else if (us == 1)
+//{
+//    Console.WriteLine(taban);
+//} else if (us < 0 || taban < 0)
+//{
+//    Console.WriteLine("Üs veya Taban negatif değer alamaz");
+//}
+//else
+//{
+//    int result = taban;
+//    for (int i = 1; i < us; i++)
+//    {
+//        toplam = 0;
+//        for (int j = 0; j < taban; j++)
+//        {
+//            toplam += result;
+//        }
+
+
+//        result = toplam;
+//    }
+
+//    Console.WriteLine(toplam);
+//}
 
 #endregion
